@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    
+    
+<link rel="stylesheet" href="styles/style.css">
+
+<title>APP</title>
+    
+<link rel="shortcut icon" sizes="128x128" href="styles/ComedyLogo.png">
+<link rel="shortcut icon" sizes="196x196" href="styles/ComedyLogo.png">
+
+<link rel="apple-touch-icon" href="styles/ComedyLogo.png">
+<link rel="apple-touch-icon" sizes="76x76" href="styles/ComedyLogo.png">
+<link rel="apple-touch-icon" sizes="120x120" href="styles/ComedyLogo.png">
+<link rel="apple-touch-icon" sizes="152x152" href="styles/ComedyLogo.png">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+
+
+</head>
+<body>
+    
+    <div id="inicio">
+        <div class="container-fluid">
+        <div class="landscapeGrid">
+        <div class="row">
+        <div class="logo col-xs-3">
+           <img src="styles/ComedyLogo.png">
+        </div>
+        <div class="frase col-xs-5">
+            <p>“Si hay algo que odio más que no ser tomado en serio, es ser tomado demasiado en serio”</p>
+        </div>
+        <div class="contralogo">
+            <img src="styles/ComedyLogo.png">
+        </div>
+        <div class="logochat col-xs-3">
+            <a onclick="toggleContent11 ()"> <img src="styles/logochat.png"></a>
+        </div>
+        </div>
+        <div class="botones1 col-xs-11">    
+            <div>
+                <a class="unclicked" style="text-decoration: none;" onclick="toggleContent()">Locales</a>
+            </div>
+            <div>
+                <a class="unclicked" style="text-decoration: none;">Cómicos</a>
+            </div>
+            </div>
+            <div class="botones2 col-xs-11">
+            <div>
+                <a class="unclicked" style="text-decoration: none;">Contenidos</a>
+            </div>
+            <div>
+                <a class="unclicked" style="text-decoration: none;" onclick="toggleContent10()">Contacto</a>
+            </div>
+        </div>    
+        <div class="titular col-xs-12">
+            <h1>Esta Semana</h1>
+        </div>
+        
+        <div id="myCarousel" class="carousel slide col-xs-12" data-ride="carousel">     
+            <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>        
+        <div class="carousel-inner">
+            <div class="item active">
+                <a onclick="toggleContent1()"><img src="styles/cartel1.jpg"></a>
+            </div>
+            <div class="item cartel2">
+                <a onclick="toggleContent2()"><img src="styles/cueva.jpg"></a>
+            </div>
+                <div class="item">
+            <a onclick="toggleContent3()"><img src="styles/cartel3.jpg"></a>
+                </div>
+        </div>
+    
+        </div>
+        </div>
+        </div>        
+    </div>
+    
+   <div id="show1" style="display:none;">
+            <div class="container-fluid">
+            <div class="landscapeGrid">
+            <div class="backarrow">
+               <a><img src="styles/back.png" height="100px" width="100px" onclick="toggleContent4()"></a>           
+            <hr>
+            </div> 
+
+            <div class="showselected">
+                <a><img src="styles/cartel1.jpg"></a>
+            </div>
+            <hr>
+                <div class="enlace col-xs-12">
+                <a href="">ENTRADAS</a>
+                    <p color="white">||</p>
+                <a>LOCALIZACIÓN</a>    
+                </div>          
+            <div class="showcomentado col-xs-12">
+                <p>Show presentado por el archiconocido Urko Vazquz y su bigotaso mi niño, en los sótanos del Nadabar365, cada jueves tenéis una cita con la comedia más terroristica de la ciudad</p>
+            </div>
+            </div>
+            </div>
+    </div>
+    
+    <div id="show2" style="display:none;">
+            <div class="container-fluid">
+            <div class="landscapeGrid">
+            <div class="backarrow">
+               <a><img src="styles/back.png" height="100px" width="100px" onclick="toggleContent4();" ></a>
+            <hr>
+            </div>    
+            <div class="showselected">
+                <img src="styles/cueva.jpg">
+                </div>
+            <hr>
+                <div class="enlace col-xs-12">
+                <a href="">ENTRADAS</a>
+                    <p color="white">||</p>
+                <a>LOCALIZACIÓN</a>    
+                </div>         
+            <div class="showcomentado col-xs-12">
+                <p>Bienvenidos a los sótanos de la comedia, al lugar donde la vida es tan difícil como divertida, déjate poner colorado por los cómicos que te acompañarán cada jueves en el Teatro de las Aguas</p>
+            </div>
+            </div>
+            </div>
+    </div>
+    
+    <div id="show3" style="display:none;">     
+        <div class="container-fluid">
+        <div class="landscapeGrid">
+        <div class="backarrow">
+            <a><img src="styles/back.png" height="100px" width="100px" onclick="toggleContent4();"></a>
+        <hr>
+        </div>       
+            <div class="showselected">
+                <img src="styles/cartel3.jpg">
+                </div>
+            <hr>
+                <div class="enlace col-xs-12">
+                <a href="">ENTRADAS</a>
+                    <p color="white">||</p>
+                <a>LOCALIZACIÓN</a>    
+                </div>         
+            <div class="showcomentado col-xs-12">
+                <p>Galder y sus secuaces viene cada domingo a entrener a sus huestes para que acaben la semana riendo, y afronten la siguiente con ganas del próximo domingo</p>
+        </div>
+        </div>
+        </div>
+    </div>
+    
+    
+    <div id="locales"  style="display:none;">
+        <div class="container-fluid">
+        <div class="row">
+        <div class="logo col-xs-3">
+            <a onclick="toggleContent5()"><img src="styles/ComedyLogo.png"></a>
+        </div>
+        <div class="frase col-xs-5">
+            <p>“Si hay algo que odio más que no ser tomado en serio, es ser tomado demasiado en serio”</p>
+        </div>
+        <div class="contralogo ">
+            <img src="styles/ComedyLogo.png">
+        </div>
+        <div class="logochat col-xs-3">
+            <img src="styles/logochat.png">
+        </div>
+        </div>
+       
+         <div class="botones col-xs-12">
+
+        <div>
+             <a class="clicked" style="text-decoration: none;">Locales</a>
+        </div>
+        <div>
+             <a class="unclicked" style="text-decoration: none;">Cómicos</a>
+        </div>
+               
+             
+        <div>
+             <a class="unclicked" style="text-decoration: none;">Contenidos</a>
+        </div>
+        <div>
+             <a class="unclicked" style="text-decoration: none;" onclick="toggleContent10()">Contacto</a>
+        </div>
+                </div> 
+         
+        <div class="titular col-xs-12">
+            <h1>Locales</h1>
+        </div>
+           
+        <div class="bares col-xs-12">
+        
+        <h2>ESTUPENDA CAFÉ BAR</h2>
+            <div class="bar row">
+            <a onclick="toggleContent6()"><img class="fotobar" src="styles/estupenda-cafe-bar.jpg"></a>
+            <p>El local que Laura Palmer estaría encantada de visitar. En plena Malasaña Juanma Dupley presenta el Open con más encanto y               misterio a este lado del Manzanares.</p>
+            </div>
+       
+        <h2>GREEN CLUB MADRID</h2>
+            <div class="bar row">
+            <a onclick="toggleContent7()"><img class="fotobar" src="styles/green-club-madrid.jpg"></a>
+            <p>Uno de los espacios con más tradición de comedia en la capital, son ya varios años organizando este espectaculo de comdia                  callejera y barata. Éxito asegurado.</p>     
+        </div>
+        
+        <h2>LA CANTINA (MATADERO)</h2>
+            <div class="bar row">
+            <a onclick="toggleContent8()"><img class="fotobar" src="styles/cantina.jpg"></a>
+            <p>Probablemente el bar con el escenario más natural y bizarro de toda la escena cómica de Madrid, sientate en sus bancos de                  madera, y prepárate para partirte el culo.</p>
+        </div>
+        
+        </div>
+        </div>
+    </div>
+    
+        <div id="local1" style="display:none;">
+                    <div class="container-fluid">
+            <div class="landscapeGrid">
+            <div class="backarrow">
+                <a onclick="toggleContent9()"><img src="styles/back.png" height="100px" width="100px"></a>         
+            </div>
+                        <hr>
+            <div class="showselected">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.377946488196!2d-3.7067482846038966!3d40.422629279364436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287d3169341b%3A0x8fb00428a75b3879!2sEstupenda+Caf%C3%A9+Bar!5e0!3m2!1ses!2ses!4v1551868724697" width="600" height="465" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            <hr>
+            
+                <div class="enlace">
+                    <a href="">ENTRADAS</a>
+                
+                    <button type="button" class="btn btn-primary" onclick="toggleContent15()">Chat con el Organizador</button>
+                </div>
+            <hr>
+        </div>
+            </div>
+    </div>
+    
+    <div id="paginaChat1" style="display:none;">
+    <div class="container-fluid" >
+         <div class="row">
+        <div class="logo col-xs-3">
+            <a onclick="toggleContent16()"><img src="styles/back.png"></a>
+        </div>
+        <div class="frase col-xs-5">
+            <p>“Si hay algo que odio más que no ser tomado en serio, es ser tomado demasiado en serio”</p>
+        </div>
+        <div class="contralogo ">
+            <img src="styles/ComedyLogo.png">
+        </div>
+        <div class="logochat col-xs-3">
+            <img src="styles/logochat.png">
+        </div>
+        </div>
+        <div class="usuario">
+            <h1 style="color:white;"  class="nombreCliente"></h1>
+            <img id="fotoCliente" src="">
+        <div>
+            <div id="logIn" onclick="firebaseAuth()"><button type="button" class="btn btn-primary" onclick="toggleContent13()">Log In</button></div>
+            <div id="logOut" style="display:none;" onclick="firebaseLogOut()"><button type="button" class="btn btn-secondary" onclick="toggleContent14()" >Log Out</button></div>
+        </div>
+            
+        </div>
+        <div class="pantallamensajes" style="color:white">
+            <ul id="chat1"></ul>
+        </div>
+        <div class="textoEnviar">
+            <input type="text" id="message1">
+            <button id="enviar" onclick="enviarMensaje1()">Enviar</button>
+        </div>
+</div> 
+    </div>
+    
+    
+        <div id="local2" style="display:none;">
+             <div class="container-fluid">
+            <div class="landscapeGrid">
+            <div class="backarrow">
+                <a onclick="toggleContent9()"><img src="styles/back.png" height="100px" width="100px"></a>         
+            </div>
+                        <hr>
+            <div class="showselected">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.089440108995!2d-3.7080152846037033!3d40.42901837936368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42286171356267%3A0x7e5a18d856567c09!2sGreen+Club+Madrid!5e0!3m2!1ses!2ses!4v1552314555417" width="600" height="465" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            <hr>
+            
+                <div class="enlace">
+                <a href="">ENTRADAS</a>
+                </div>
+            
+            <hr>
+        </div>
+            </div>
+        </div>
+    
+        <div id="local3" style="display:none;">
+            <div class="container-fluid">
+            <div class="landscapeGrid">
+            <div class="backarrow">
+                <a onclick="toggleContent9()"><img src="styles/back.png" height="100px" width="100px"></a>         
+            </div>
+                        <hr>
+            <div class="showselected">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.785730457696!2d-3.6985475846048446!3d40.39144127936814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422649b8da2f43%3A0xaa01855abed47060!2sLa+Cantina+del+Matadero!5e0!3m2!1ses!2ses!4v1552314705886" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            <hr>
+           
+                <div class="enlace">
+                <a href="">ENTRADAS</a>
+                </div>
+          
+            <hr>
+        </div>
+             </div>
+        </div>
+    
+    
+    <div id="paginacontacto" style="display:none;">
+         <div class="container-fluid">
+        <div class="row">
+        <div class="logo col-xs-3">
+            <a onclick="toggleContent5()"><img src="styles/ComedyLogo.png"></a>
+        </div>
+        <div class="frase col-xs-5">
+            <p>“Si hay algo que odio más que no ser tomado en serio, es ser tomado demasiado en serio”</p>
+        </div>
+        <div class="contralogo ">
+            <img src="styles/ComedyLogo.png">
+        </div>
+        <div class="logochat col-xs-3">
+            <img src="styles/logochat.png">
+        </div>
+        </div>
+       
+        <div class="botones col-xs-12">
+                <div>
+                    <a class="unclicked" style="text-decoration: none;"  onclick="toggleContent()">Locales</a>
+                </div>
+                <div>
+                    <a class="unclicked" style="text-decoration: none;">Cómicos</a>
+                </div>
+                <div>
+                    <a class="unclicked" style="text-decoration: none;">Contenidos</a>
+                </div>
+                <div>
+                    <a class="clicked" style="text-decoration: none;" onclick="toggleContent10()">Contacto</a>
+                </div>     
+        </div>
+     
+        <div class="titular col-xs-12">
+            <h1>Contacto</h1>
+        </div>
+    
+    <div class="contacto col-xs-12">
+        <h3>Email</h3>
+        <p>Mándanos un e-mail con cualquier duda acerca de las actuaciones o los cómicos de la página, nos pondremos en contacto contigo lo antes que nos sea humanamente posible, igual nos pillas de cañas y claro, tardaremos un ratico.</p>
+        
+          <address><h3><a href="mailto:PEPE@PEPE.COM">EMILIO</a></h3></address>
+        
+        <h3>Redes Sociales</h3>
+            <p>Síguenos en nuestra cuenta oficial de Instagram, Twitter y Facebook, no nos sigas por la calle por que te reviento.</p>
+        <div class="row">
+    <h4 class="col-xs-4"><address><a href="https://www.instagram.com/ferb_bc/?hl=es"><img src="styles/instachurris.jpg" height="100" width="100"></a></address></h4>
+    <h4 class="col-xs-4"><address><a href="https://twitter.com/tereluq?lang=es"><img src="styles/twitter.png" height="100" width="100"></a></address></h4>
+    <h4 class="col-xs-4"><address><a href="https://www.facebook.com/barackobama/"><img src="styles/fecebook.png" height="90" width="90"></a></address></h4>
+        </div>
+    </div>
+    
+    
+</div>
+    </div>
+    
+<div id="paginaChat" style="display:none;">
+    <div class="container-fluid">
+        <div class="chateando">
+         <div class="row">
+        <div class="logo col-xs-3">
+            <a onclick="toggleContent12()"><img src="styles/ComedyLogo.png"></a>
+        </div>
+        <div class="frase col-xs-5">
+            <p>“Si hay algo que odio más que no ser tomado en serio, es ser tomado demasiado en serio”</p>
+        </div>
+        <div class="contralogo ">
+            <img src="styles/ComedyLogo.png">
+        </div>
+        <div class="logochat col-xs-3">
+            <img src="styles/logochat.png">
+        </div>
+        </div>
+        <div class="usuario">
+            <h1 style="color:white;" class="nombreCliente"></h1>
+            <img id="fotoCliente" src="">
+        <div>
+            <div id="logIn" onclick="firebaseAuth()"><button type="button" class="btn btn-primary" onclick="toggleContent13()">Log In</button></div>
+            <div id="logOut" style="display:none;" onclick="firebaseLogOut()"><button type="button" class="btn btn-secondary" onclick="toggleContent14()" >Log Out</button></div>
+        </div>  
+        </div>
+        <div class="pantallamensajes" style="color:white">
+            <ul id="chat"></ul>
+        </div>
+        <div class="textoEnviar">
+            <input type="text" id="message">
+            <button id="enviar1" onclick="enviarMensaje()">Enviar</button>
+        </div>
+        </div>
+</div> 
+    </div>
+  
+        
+
+<script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC40iBXoTCE66I150emCKEc7RT9BCIRW-U",
+    authDomain: "comedyweb-1e9b1.firebaseapp.com",
+    databaseURL: "https://comedyweb-1e9b1.firebaseio.com",
+    projectId: "comedyweb-1e9b1",
+    storageBucket: "comedyweb-1e9b1.appspot.com",
+    messagingSenderId: "351650560782"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="scripts/code.js"></script>
+</body>

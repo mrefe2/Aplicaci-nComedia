@@ -1,0 +1,260 @@
+.container-fluid{
+    background-color: black;
+    border-color: black;
+} 
+
+.logo img {
+    width: 90px;
+    height:  90px;
+}
+.contralogo{
+ display: none;
+}
+.logochat img {
+    width:  70px;
+    height:  70px;
+}
+
+    
+.frase {
+    margin: 10px;
+    font-size: 13px;
+    color: white;
+    font-style: oblique;
+    text-align: center;
+}
+
+.titular {
+    color: white;
+    display: flex;
+    justify-content: center;   
+    text-decoration: overline underline;
+    font-size: 15px;
+}
+.titular h1 {
+    font-size: 20px;
+ }
+
+
+.unclicked {
+    padding: 5px;
+    text-align: center;
+    color: white;
+    background-color: #28c199;
+    border: 2px;
+    border-style: solid;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.clicked {
+   padding: 5px;
+    text-align: center;
+    color: white;
+    background-color: #28aec1;
+    border: 2px;
+    border-style: solid;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.botones1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 5px;
+}
+.botones2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;  
+    margin: 5px;
+}
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+}
+  
+.carousel-inner {
+    width: 100%;
+    overflow: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}   
+.item {
+ height: 440px;   
+}
+
+.showselected {
+    display: flex;
+    justify-content: center;
+}
+
+.showselected img {
+    height: 400px;
+    width: 300px;
+}
+.enlace {
+    display: flex;
+    flex-direction: row;
+}
+.enlace a {
+    text-align: center;
+}
+.showcomentado {
+    color: white;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    color: white;
+    text-decoration: underline;
+    font-size: 17px;
+}
+
+.bares {
+    margin: 15px;
+}
+
+.bar {
+    display: flex;
+    flex-direction: row;
+}
+.fotobar{
+    width: 128px;
+    height: 93px;
+}
+.bar p {
+    color: white;
+    font-size: 11px;
+}
+.barselected {
+    text-align: center;
+} 
+
+h3 {
+    color: white;
+    font-size: 19px;
+}
+.contacto p{
+ color: white;
+font-size: 14px; 
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.pantallamensajes {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    overflow-y: scroll;
+    color: white;
+    height: 487px;
+    overflow: auto;
+}
+
+
+
+
+@media (orientation: landscape){
+    .landscapeGrid {
+        display: grid;
+        grid-template-columns: 15% 70% 15%;
+        grid-template-rows: 15% 5% 80%;
+    }
+    
+    .row {
+        grid-column: 1/5;
+        grid-row: 1/2;
+        display: flex;
+    }
+    .logochat{
+        display: flex;
+        justify-content: flex-end;
+    }
+      
+    .botones1 {
+        grid-row: 3/4;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+    } 
+    .botones2 {
+        grid-row: 3/4;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 20px;
+    }
+    
+    
+    .titular {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+    
+    .carousel {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+     
+    .bares {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    .bares p {
+    font-size: 15px;
+}
+    
+    .backarrow {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        height: 50px;
+        width: 50px;
+    }
+    
+    .backarrow img {
+        height: 50px;
+        width: 50px;
+    }
+    
+    .showselected {
+        grid-column: 2/3;
+        grid-row: 1/4;
+    }
+    
+    .enlace {
+        display: flex;
+        flex-direction: column;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        justify-content: space-around;
+    }
+    
+    .showcomentado {
+        grid-column: 3/4;
+        grid-row: 2/4;
+        height: 180px;
+        width: 180px;
+        display: flex;
+        left: -75px;
+    }
+}
+
+
